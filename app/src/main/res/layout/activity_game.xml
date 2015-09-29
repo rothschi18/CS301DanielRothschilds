@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.administrator.danielrcs371hw2.Game"
+    android:background="@mipmap/soccerfield">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/RightField"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/LeftField"
+        android:layout_toStartOf="@+id/LeftField"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/RP1" />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/RP2"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/RP3"
+            android:focusableInTouchMode="false" />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/RP4"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/RP5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="425dp"
+        android:layout_height="match_parent"
+        android:id="@+id/LeftField"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/RightField"
+        android:layout_alignBottom="@+id/RightField">
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/LP1"
+            android:layout_gravity="right" />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/LP2"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/LP3"
+            android:layout_gravity="right" />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/LP4"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/LP5"
+            android:layout_gravity="right" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Team1"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/versus"
+        android:layout_toStartOf="@+id/versus" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Team2"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/versus"
+        android:layout_toEndOf="@+id/versus" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VS"
+        android:id="@+id/versus"
+        android:textColor="#ffff171e"
+        android:textSize="50dp"
+        android:layout_toStartOf="@+id/LeftField"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick New Players"
+        android:id="@+id/returnToPick"
+        android:layout_alignBottom="@+id/versus"
+        android:layout_alignRight="@+id/LeftField"
+        android:layout_alignEnd="@+id/LeftField"
+        android:onClick="returnToPick" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAY GAME"
+        android:id="@+id/playGame"
+        android:textSize="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/Team1"
+        android:layout_alignStart="@+id/Team1"
+        android:textColor="#ffff1a32"
+        android:backgroundTint="#ff1b29ff"
+        android:onClick="playGame" />
+
+</RelativeLayout>

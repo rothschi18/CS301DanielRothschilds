@@ -1,0 +1,373 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.administrator.danielrcs371hw2.EditTeam">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENTER A PLAYER FIRST NAME ->>>"
+            android:id="@+id/textView2"
+            android:layout_weight="0.02"
+            android:textSize="25dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstName"
+            android:layout_weight="0.74" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back to Menu"
+            android:id="@+id/back"
+            android:layout_weight="0.02"
+            android:nestedScrollingEnabled="false"
+            android:onClick="back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linearLayout4"
+        android:id="@+id/linearLayout5">
+
+        <TextView
+            android:layout_width="341dp"
+            android:layout_height="wrap_content"
+            android:text="ENTER A TEAM FROM THE MAIN LIST"
+            android:id="@+id/textView3"
+            android:textSize="25dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/teamName"
+            android:layout_weight="0.92" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout7">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENTER A LAST NAME FOR PLAYER ->>"
+            android:id="@+id/textView5"
+            android:textSize="25dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton"
+            android:layout_gravity="center_vertical" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/newLastName"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageButton2"
+        android:layout_centerHorizontal="true">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:id="@+id/playerImage1"
+            android:layout_weight="1"
+            android:background="@mipmap/player1"
+            android:onClick="createPlayer"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:id="@+id/playerImage2"
+            android:layout_weight="1"
+            android:background="@mipmap/player2"
+            android:onClick="createPlayer"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:id="@+id/playerImage3"
+            android:layout_weight="1"
+            android:background="@mipmap/player3"
+            android:onClick="createPlayer"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:id="@+id/playerImage4"
+            android:layout_weight="1"
+            android:background="@mipmap/player4"
+            android:onClick="createPlayer"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:id="@+id/playerImage5"
+            android:layout_weight="1"
+            android:background="@mipmap/player5"
+            android:onClick="createPlayer"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:id="@+id/playerImage6"
+            android:layout_weight="1"
+            android:background="@mipmap/player6"
+            android:onClick="createPlayer"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:id="@+id/playerImage7"
+            android:layout_weight="1"
+            android:background="@mipmap/player7"
+            android:onClick="createPlayer"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:id="@+id/playerImage8"
+            android:layout_weight="1"
+            android:background="@mipmap/player8"
+            android:onClick="createPlayer"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:id="@+id/playerImage9"
+            android:layout_weight="1"
+            android:background="@mipmap/player9"
+            android:onClick="createPlayer"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:id="@+id/playerImage10"
+            android:layout_weight="1"
+            android:background="@mipmap/player10"
+            android:onClick="createPlayer"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Now click on a picture for your player to create the new player!"
+        android:id="@+id/textView6"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="25dp" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView2"
+        android:layout_above="@+id/imageButton2"
+        android:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/EditTeam1"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:onClick="setTeamName" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/EditTeam2"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:onClick="setTeamName" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/EditTeam3"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:onClick="setTeamName" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/EditTeam4"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:onClick="setTeamName" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/EditTeam5"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:onClick="setTeamName" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/EditTeam6"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:onClick="setTeamName" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/EditTeam7"
+                android:layout_weight="1"
+                android:onClick="setTeamName"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/EditTeam8"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:onClick="setTeamName" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/EditTeam9"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:onClick="setTeamName" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/EditTeam10"
+                android:layout_weight="1"
+                android:onClick="setTeamName"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/EditTeam11"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:onClick="setTeamName" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/EditTeam12"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:onClick="setTeamName" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/EditTeam13"
+                android:layout_weight="1"
+                android:onClick="setTeamName"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/EditTeam14"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:onClick="setTeamName" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/EditTeam15"
+                android:layout_weight="1"
+                android:onClick="setTeamName"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/horizontalScrollView2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linearLayout7">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENTER A STRENGTH (Integer)"
+            android:id="@+id/strengthSet"
+            android:layout_weight="0.25"
+            android:textSize="25dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/strength"
+            android:layout_weight="0.41"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
